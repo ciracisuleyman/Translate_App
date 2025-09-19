@@ -61,7 +61,7 @@ prompt_template=ChatPromptTemplate.from_messages(
         ("system",system_prompt), ("user", "{text}")
     ]
 )
-
+#çıktı parçalara bölünür
 parser=StrOutputParser()
 chain=prompt_template | model | parser
 
