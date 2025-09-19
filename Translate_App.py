@@ -7,7 +7,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from fastapi import FastAPI
 from langserve import add_routes
 
-# Bu yorum: uygulama çeviri yapıyor
 
 # Ortam değişkenini yükle (.env içinde GOOGLE_API_KEY olmalı)
 load_dotenv()
