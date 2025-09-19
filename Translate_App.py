@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -7,6 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from fastapi import FastAPI
 from langserve import add_routes
 
+# Bu yorum: uygulama çeviri yapıyor
 
 # Ortam değişkenini yükle (.env içinde GOOGLE_API_KEY olmalı)
 load_dotenv()
@@ -39,7 +40,7 @@ add_routes(
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
-=======
+
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -81,4 +82,4 @@ add_routes(
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
->>>>>>> 1728ea1 (Initial commit without secrets)
+
